@@ -1,0 +1,53 @@
+w<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AcidPaintYoDOG DOODLE JUMP</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="/assets/js/prefixfree.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+
+      <canvas id="canvas">
+        Aww, your browser doesn't support HTML5!
+      </canvas>
+
+      <div id="mainMenu">
+        <h1>Acid_Paint Yo DOG's DOODLE JUMP</h1>
+        <h3> Made by me,</h3>
+        <h3><a href="http://twitter.com/solitarydesigns/" target="_blank">Cause I'm Awesome</a></h3>
+  			<h3>and <a href="http://twitter.com/_rishabhp" target="_blank">Boss</a></h3>
+
+        <p class="info">
+          use
+          <span class="key left">←</span>
+          <span class="key right">→</span>
+          to move and space bar to re-start...
+        </p>
+        <a class="button" href="javascript:init()">Play</a>
+      </div>
+
+      <div id="gameOverMenu">
+        <h1>You Died Pizza!</h1>
+        <h3 id="go_score">you scored 0 points It doesn't really matter</h3>
+ 
+        <a class="button" href="javascript:reset()">Restart</a>
+        <a id="tweetBtn" target="_blank" class="button tweet" href="#">Tweet score</a>
+
+        <a id="fbBtn" target="_blank" class="button fb" href="#">Post on FB</a>
+      </div>
+
+      <!-- Preloading image ;) -->
+      <img id="sprite" src="doodle.png"/>
+
+      <div id="scoreBoard">
+        <p id="score">0</p>
+      </div>
+
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
